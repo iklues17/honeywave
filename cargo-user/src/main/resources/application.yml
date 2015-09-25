@@ -1,0 +1,9 @@
+server:
+  port: 31001
+ 
+spring:
+  data:
+    mongodb:
+      host: 70.121.244.13
+      port: 27017
+      database: user

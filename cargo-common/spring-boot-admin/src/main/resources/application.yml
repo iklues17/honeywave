@@ -1,0 +1,6 @@
+server:
+  port: 58001
+
+endpoints:
+  restart:
+    enabled: true

@@ -1,0 +1,51 @@
+<ul class="title-area">
+	<!-- Title Area -->
+	{{#if isAdmin}}
+	<li class="name">
+	{{else}}
+	<li class="name portal">
+	{{/if}}
+		<h2>
+			<a href="">
+				<span>Cargo Tracker <label class="show-for-medium-up">- Anyframe Cloud Ed.</label></span>
+			</a>
+		</h2>
+	</li>
+	<li class="toggle-topbar menu-icon">
+		<a href="#"><span>menu</span></a>
+	</li>
+</ul>
+<section class="top-bar-section">
+	{{#if isAdmin}}
+	<ul class="left">
+		{{#if isLogedin}}
+		<li><a href="#admin/dashboard">Dashboard</a></li>
+		{{/if}}
+		<li><a href="#admin/track">Track</a></li>
+		{{#if isLogedin}}
+		<li><a href="#admin/about">About</a></li>
+		<li><a href="#admin/world-map">World Map</a></li>
+		{{/if}}
+	</ul>
+	{{else}}
+	<ul class="left">
+		{{#if isLogedin}}
+		<li><a href="#dashboard">Dashboard</a></li>
+		<li><a href="#booking">Booking</a></li>
+		{{/if}}
+		<li><a href="#track">Track</a></li>
+		{{#if isLogedin}}
+		<li><a href="#about">About</a></li>
+		{{/if}}
+	</ul>
+	{{/if}}
+	<ul class="right">
+		{{#if isLogedin}}
+		<li><a href="#my-page">{{firstName}}'s Page</a></li>
+		<li><a href="#logout">Log out</a></li>
+		{{else}}
+		<li><a href="#login">Log in</a></li>
+		<li><a href="#signup">Sign up</a></li>
+		{{/if}}
+	</ul>
+</section>

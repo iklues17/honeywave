@@ -1,0 +1,48 @@
+<form id='formSignUp'>
+	<div class="row">
+		<fieldset>
+			<legend>Create New Account</legend>
+			<label>Login Name 
+				<input name="loginName" type="text" placeholder="Inputs your name for log in...">
+			</label>
+			<label>Email Address 
+				<input name="emailAddress" type="email" placeholder="Inputs your email address...">
+			</label>
+			<label>Password 
+				<input name="password" type="password" placeholder="Inputs your password...">
+			</label>
+			<label>First Name 
+				<input name="firstName" type="text" placeholder="Inputs your Firstname...">
+			</label>
+			<label>Last Name
+				<input name="lastName" type="text" placeholder="Inputs your Lastname...">
+			</label>
+			<label>Mobile Number
+				<span class="row entry-row">
+					<span class="small-6 columns entry-col">
+						<input dir="rtl" name="international" type="text" value="+82" class="num" disabled/>
+						<select dir="rtl" name="mobilePrefix" class="num">
+							<option value="10">010</option>
+							<option value="11">011</option>
+							<option value="16">016</option>
+							<option value="17">017</option>
+							<option value="18">018</option>
+							<option value="19">019</option>
+						</select>
+						<input dir="rtl" name="nSN1" type="tel" class="num" />
+						<input dir="rtl" name="nSN2" type="tel" class="num" />
+					</span>
+				</span>
+			</label>
+			<label>Your Company 
+				<select name="company"></select>
+			</label>
+		</fieldset>
+	</div>
+	<div class="row">
+		<ul class="button-group radius right">
+			<li><div id="btnSignUp" role="button" class="button small" tabindex="0">Sign up</div></li>
+			<li><div id="btnBack" role="button" class="button small secondary">Cancel</div></li>
+		</ul>
+	</div>
+</form>
